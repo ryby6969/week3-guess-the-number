@@ -82,7 +82,7 @@ def playGame( showAnswer ):
     print('Well, ' + name + ', what is the largest number you would like to guess?')
     topLimit=int(input())
     print('Please choose the total number of guesses available.')
-    totalGuesses = int(input())
+    totalGuesses =int(input())
     theNumber = generateNumber(topLimit)
     print('Pick a number between 1 and ' + str(topLimit) + ' and you have ' + str(generateNumber) + ' guesses')
     userGuess = int(input())
