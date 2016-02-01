@@ -57,10 +57,10 @@ def evaluateAnswer( userGuess, userSecretNumber ):
     # 3. If the user guess and secret number are the same,      #
     #    return True, no message prints to the screen           #
     #############################################################
-    if userguess < usersecretNumber:
+    if userGuess < userSecretNumber:
          print('Your guess is too low.')
          return False
-    elif userguess > secretNumber:
+    elif userGuess > userSecretNumber:
          print('Your guess is too high.')  
          return False          
     elif userGuess == userSecretNumber:
@@ -84,8 +84,8 @@ def playGame( showAnswer ):
     print('Please choose the total number of guesses available.')
     totalGuesses =int(input())
     theNumber = generateNumber(topLimit)
-    print('Pick a number between 1 and ' + str(topLimit) + ' and you have ' + str(generateNumber) + ' guesses')
-    userGuess = int(input())
+    print('Pick a number between 1 and ' + str(topLimit) + ' and you have ' + str(totalGuesses) + ' guesses')
+    
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
